@@ -71,7 +71,7 @@ public class Armour extends Equippable {
     public int requiredNumberOfValues()
     {
         // Replace this with the correct value
-        return -1;
+        return 7;
     }
 
     @Override
@@ -83,6 +83,11 @@ public class Armour extends Equippable {
         this.setDurability(Integer.parseInt(tokens[2]));
 
         // Complete the remainder of this method
+        this.setDefense(Integer.parseInt(tokens[3]));
+        this.setModifier(tokens[4]);
+        this.setModifierLevel(Integer.parseInt(tokens[5]));
+        this.setElement(tokens[6]);
+        
     }
 
     /**

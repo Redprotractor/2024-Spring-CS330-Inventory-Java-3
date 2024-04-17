@@ -102,13 +102,15 @@ public class Consumable extends Item {
     public int requiredNumberOfValues()
     {
         // Replace this with the correct value
-        return -1;
+        return 3;
     }
 
     @Override
     public void fromTokens(String[] tokens)
     {
-
+    	this.setName(tokens[0]);
+    	this.setEffect(tokens[1]);
+    	this.setNumberOfUses(Integer.parseInt(tokens[2]));
     }
 
     /**

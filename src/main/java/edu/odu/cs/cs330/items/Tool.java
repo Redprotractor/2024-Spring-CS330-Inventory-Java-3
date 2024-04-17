@@ -71,13 +71,18 @@ public class Tool extends Equippable {
     public int requiredNumberOfValues()
     {
         // Replace this with the correct value
-        return -1;
+        return 6;
     }
 
     @Override
     public void fromTokens(String[] tokens)
     {
-
+    	this.setName(tokens[0]);
+    	this.setMaterial(tokens[1]);
+    	this.setDurability(Integer.parseInt(tokens[2]));
+    	this.setSpeed(Integer.parseInt(tokens[3]));
+    	this.setModifier(tokens[4]);
+    	this.setModifierLevel(Integer.parseInt(tokens[5]));    	
     }
 
     /**
