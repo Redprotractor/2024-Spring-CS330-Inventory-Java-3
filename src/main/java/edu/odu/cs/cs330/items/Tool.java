@@ -1,5 +1,7 @@
 package edu.odu.cs.cs330.items;
 
+import java.util.Objects;
+
 /**
  * This class represents one tool--as found in most video games. This includes
  * pickaxes and shovels.
@@ -128,13 +130,14 @@ public class Tool extends Equippable {
     @Override
     public int hashCode()
     {
-        int hash = this.getName().hashCode();
-        hash += 2 * this.getMaterial().hashCode();
-        hash += 4 * this.getModifier().hashCode();
-        hash += 8 * this.getModifierLevel();
-        hash += 32 * this.getSpeed();
-
-        return hash;
+        return Objects.hash(
+                this.getName(),
+                this.getMaterial(),
+                this.getModifier(),
+                this.getModifierLevel(),
+                this.getElement(),
+                this.getSpeed()
+            );
     }
 
     /**

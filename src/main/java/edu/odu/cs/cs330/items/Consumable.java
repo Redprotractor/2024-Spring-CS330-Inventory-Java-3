@@ -1,5 +1,7 @@
 package edu.odu.cs.cs330.items;
 
+import java.util.Objects;
+
 /**
  * This class represents one Consumable Item--as found in most video games.
  * This includes food.
@@ -153,7 +155,10 @@ public class Consumable extends Item {
     @Override
     public int hashCode()
     {
-        return -1;
+        return Objects.hash(
+                this.getName(),
+                this.getEffect()
+            );
     }
 
     /**
