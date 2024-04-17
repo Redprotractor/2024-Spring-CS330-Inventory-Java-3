@@ -116,7 +116,11 @@ public class Consumable extends Item {
     public Item clone()
     {
         // Replace the next line
-        return null;
+    	Consumable cpy = new Consumable();
+    	cpy.name = this.name;
+    	cpy.effect = this.effect;
+    	cpy.uses = this.uses;
+        return cpy;
     }
 
     /**

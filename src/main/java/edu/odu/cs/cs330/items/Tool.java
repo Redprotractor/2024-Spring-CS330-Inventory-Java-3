@@ -84,7 +84,16 @@ public class Tool extends Equippable {
     @Override
     public Item clone()
     {
-        return null;
+        Tool cpy = new Tool();
+        
+        cpy.name = this.name;
+        cpy.speed = this.speed;
+        cpy.setDurability(this.getDurability());
+        cpy.setMaterial(this.getMaterial());
+        cpy.setModifier(this.getModifier());
+        cpy.setModifierLevel(this.getModifierLevel());
+    	
+    	return cpy;
     }
 
     /**
