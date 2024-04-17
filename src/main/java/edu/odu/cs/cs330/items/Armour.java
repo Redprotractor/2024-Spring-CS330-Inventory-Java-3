@@ -44,6 +44,7 @@ public class Armour extends Equippable {
         super();
 
         // Complete the remainder of this method
+        this.defense = 0;
     }
 
     /**

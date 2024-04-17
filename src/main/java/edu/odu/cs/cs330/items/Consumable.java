@@ -46,6 +46,8 @@ public class Consumable extends Item {
         super("[Placeholder]");
 
         // Complete the remainder of this method
+        this.effect = "";
+        this.uses = 0;
     }
 
     /**
