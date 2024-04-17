@@ -167,6 +167,11 @@ public class Consumable extends Item {
     @Override
     public String toString()
     {
-        return "Make sure to check Armour.toString for hints.";
+    	return String.format(
+        		FMT_STR,
+        		this.getName(),
+        		this.getEffect(),
+        		this.getNumberOfUses()
+    	);
     }
 }

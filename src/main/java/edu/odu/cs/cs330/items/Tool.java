@@ -146,14 +146,14 @@ public class Tool extends Equippable {
     @Override
     public String toString()
     {
-        return String.format(
-           FMT_STR,
-           this.getName(),
-           this.getDurability(),
-           this.getSpeed(),
-           this.getMaterial(),
-           this.getModifier(),
-           this.getModifierLevel()
-        );
+    	return String.format(
+    		FMT_STR,
+    		this.getName(),
+    		this.getDurability(),
+    		this.getSpeed(),
+    		this.getMaterial(),
+    		this.getModifier(),
+    		this.getModifierLevel()
+    	);
     }
 }
